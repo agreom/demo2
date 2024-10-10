@@ -1,0 +1,59 @@
+<html>
+<head>
+<style>
+    div{
+        height: 500px; width: 250px;
+        border: 2px solid red;
+        position: absolute;
+        top: 50%;
+        left: 50%;transform: translate(-50%, -50%);
+    }
+</style>
+</head>    
+<body>
+    
+    <div>
+<form>
+  
+    <label for="feedback-type">Feedback Type:</label><br>
+    <select id="feedback-type" name="feedback-type">
+      <option value="general">General</option>
+      <option value="suggestion">Suggestion</option>
+      <option value="complaint">Complaint</option>
+    </select>
+  
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea>
+  
+    <label for="rating">Website Rating:</label>
+    <input type="radio" id="rating-1" name="rating" value="1">
+    <label for="rating-1">1</label>
+    <input type="radio" id="rating-2" name="rating" value="2">
+    <label for="rating-2">2</label>
+    <input type="radio" id="rating-3" name="rating" value="3">
+    <label for="rating-3">3</label>
+    <input type="radio" id="rating-4" name="rating" value="4">
+    <label for="rating-4">4</label>
+    <input type="radio" id="rating-5" name="rating" value="5">
+    <label for="rating-5">5</label>
+  
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="10" max="100">
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8">
+  
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website">
+  
+    <input type="checkbox" id="terms" name="terms">
+    <label for="terms">I agree to the terms and conditions.</label>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+  </html>
